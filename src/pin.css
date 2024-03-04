@@ -1,0 +1,131 @@
+:root {
+  --theme-gradient-heat: #c20ea1, #dd2d7f, #ee4c5e, #f46d41;
+}
+
+.input {
+  border: 2px #f16745 solid;
+  width: 400px;
+  height: 200px;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: white;
+}
+
+label {
+  font-size: 30px;
+  font-family: cursive;
+  position: relative;
+  /* bottom: 40px; */
+  margin-top: 40px;
+  /* border: 1px black solid; */
+  color: black;
+}
+input {
+  border: 2px #fcbb42 solid;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 20px;
+  background-color: #96b4d2;
+  color: white;
+  margin-top: 40px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Removes the inner padding in Chrome/Safari */
+}
+.btn {
+  width: 90px;
+  height: 40px;
+  color: white;
+  margin-top: 25px;
+  border-radius: 4px;
+  background-color: #dd2d7f;
+  outline: none;
+  border: none;
+}
+button:active {
+  scale: 0.9;
+}
+h1 {
+  background-image: linear-gradient(45deg, var(--theme-gradient-heat));
+  color: #c20ea1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+input:active,
+input:hover {
+  border: 2px #f16745 solid;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+  position: relative;
+}
+.table {
+  width: 600px;
+  /* width: 100%; */
+  background-color: white;
+
+  margin: 0 auto;
+  margin-top: 90px;
+  margin-right: 0 auto;
+
+  border: 1px black solid;
+}
+
+td {
+  text-align: center;
+  border: 1px black solid;
+  margin-left: 40px;
+  height: 40px;
+  width: 150px;
+}
+
+th {
+  height: 50px;
+  width: 150px;
+  border: 1px black solid;
+}
+
+@media (max-width: 768px) {
+  .table {
+    overflow-x: auto;
+    width: 90%;
+
+    /* Enable horizontal scrolling on smaller screens */
+  }
+
+  td {
+    text-align: center;
+    border: 1px black solid;
+    margin-left: 20px;
+    height: 30px;
+    width: 90px;
+  }
+
+  th {
+    height: 40px;
+    width: 90px;
+    border: 1px black solid;
+  }
+}

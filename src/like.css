@@ -1,0 +1,39 @@
+.container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  color: white;
+}
+.likebtn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 15px;
+  border: none;
+  padding: 5px;
+  outline: none;
+  text-align: center;
+  background-color: #f84298;
+  border-radius: 5px;
+  color: white;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  outline: none;
+  scale: 1.1;
+}
+
+.btn:hover {
+  border: white 1px solid;
+}
