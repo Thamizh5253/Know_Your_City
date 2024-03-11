@@ -8,7 +8,7 @@ import Modal from "@mui/material/Modal";
 import "./pin.css";
 
 const Pin = () => {
-  const [pin, setPin] = useState("639105");
+  const [pin, setPin] = useState("");
   const [pincodeData, setPincodeData] = useState(null);
   const [open, setOpen] = useState(false);
 
