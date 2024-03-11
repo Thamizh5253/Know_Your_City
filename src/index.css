@@ -1,13 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  background: rgb(105, 155, 200);
+  background: -moz-radial-gradient(
+    top left,
+    ellipse cover,
+    rgba(105, 155, 200, 1) 0%,
+    rgba(181, 197, 216, 1) 57%
+  );
+  background: -webkit-gradient(
+    radial,
+    top left,
+    0px,
+    top left,
+    100%,
+    color-stop(0%, rgba(105, 155, 200, 1)),
+    color-stop(57%, rgba(181, 197, 216, 1))
+  );
+  background: -webkit-radial-gradient(
+    top left,
+    ellipse cover,
+    rgba(105, 155, 200, 1) 0%,
+    rgba(181, 197, 216, 1) 57%
+  );
+  background: -o-radial-gradient(
+    top left,
+    ellipse cover,
+    rgba(105, 155, 200, 1) 0%,
+    rgba(181, 197, 216, 1) 57%
+  );
+  background: -ms-radial-gradient(
+    top left,
+    ellipse cover,
+    rgba(105, 155, 200, 1) 0%,
+    rgba(181, 197, 216, 1) 57%
+  );
+  background: radial-gradient(
+    ellipse at top left,
+    rgba(105, 155, 200, 1) 0%,
+    rgba(181, 197, 216, 1) 57%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#699bc8', endColorstr='#b5c5d8',GradientType=1 );
+
+  height: 100vh;
 }
