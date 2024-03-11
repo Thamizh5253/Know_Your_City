@@ -4,7 +4,7 @@ const Ques = () => {
   return (
     <div>
       <div className="box">
-        <a href="https://thamizh.tech" target="_blank">
+        <a href="https://project-list-ten.vercel.app/" target="_blank">
           <button className="qbtn">
             <span className="ques">🌐</span>
             <span className="tool">Other Projects</span>

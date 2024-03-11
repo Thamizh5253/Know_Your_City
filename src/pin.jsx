@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
+import Ques from "./ques";
 
 import Modal from "@mui/material/Modal";
 // import Button from "@mui/material/Button";
@@ -7,7 +8,7 @@ import Modal from "@mui/material/Modal";
 import "./pin.css";
 
 const Pin = () => {
-  const [pin, setPin] = useState("");
+  const [pin, setPin] = useState("639105");
   const [pincodeData, setPincodeData] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -54,8 +55,8 @@ const Pin = () => {
 
       const data = await response.json();
       setPincodeData(data);
-      //   console.log(data[0]?.Status);
-      if (data[0]?.Status === "Error") {
+      console.log(data[0]?.Status);
+      if (data[0]?.Status === "Error" || data[0]?.Status === "404") {
         toast.error("😔 Sorry, No Data Found", {
           position: "top-right",
           autoClose: 5000,
@@ -183,9 +184,11 @@ const Pin = () => {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="modal"
       >
         {renderTable()}
       </Modal>
+      <Ques></Ques>
     </div>
   );
 };

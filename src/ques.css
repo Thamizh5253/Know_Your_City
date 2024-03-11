@@ -1,8 +1,11 @@
 .box {
-  margin-left: 70px;
+  /* margin-left: 800px; */
   position: relative;
-  left: 350px;
-  top: 200px;
+  /* left: 950px; */
+  /* left: 25px; */
+  margin-top: 20px;
+  /* border: 1px solid #000; */
+  /* top: 250px; */
   color: white;
   /* background-color: white; */
   width: 60px;
@@ -54,10 +57,10 @@
     right: auto; /* Remove the right offset */
     top: 0; /* Move to the top */
     width: calc(100% + 20px); /* Increase the width by 20px */
-    margin-bottom: 20px;
-    margin-right: 10px;
-    top: 80px;
-    left: 45px;
+    /* margin-bottom: 20px;
+    margin-right: 10px; */
+    /* top: 80px;
+    left: 45px; */
   }
   .qbtn {
     width: 40px;

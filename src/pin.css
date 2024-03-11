@@ -86,13 +86,21 @@ input:hover {
   /* width: 100%; */
   background-color: white;
 
-  margin: 0 auto;
+  /* margin: 0 auto;
   margin-top: 90px;
-  margin-right: 0 auto;
+  margin-right: 0 auto; */
 
   border: 1px black solid;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 td {
   text-align: center;
   border: 1px black solid;
